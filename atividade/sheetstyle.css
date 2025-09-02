@@ -1,0 +1,92 @@
+body {
+    background-color: lightgray;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+    width: 100%;
+    top: 0%;
+    border: 3px solid blue;
+}
+
+.image_footer {
+    width: 100px;
+    height: 100px;
+}
+
+.end {
+    top: 100%;
+    font-family: Comic SANS MS;
+    font-size: 15pt;
+    border: 0px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: lightskyblue;
+    color: darkred;
+}
+
+.books {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+}
+
+.space {
+    display: flexbox;
+    margin: 50px;
+}
+
+.content {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20pts;
+    color: indigo;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: darkgreen;
+}
+
+table {
+    border: 2px red;
+    border-style: dashed;
+}   
+
+th {
+    color: red;
+}
+
+th, td {
+    border: 1px red;
+    border-style: solid;
+    padding: 6px;
+}
+
+.item {
+    border: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.order {
+    background-color: yellow;
+    text-align: left;
+    display: inline-block;
+    justify-content: center;
+    margin: 20px;
+}
+
+.bordering {
+    border: 1px;
+    color: red;
+}
