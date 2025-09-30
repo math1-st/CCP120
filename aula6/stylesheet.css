@@ -1,0 +1,13 @@
+body {
+    background-color: steelblue;
+}
+
+#id_input {
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+    text-align: center;
+    font-size: 20px;
+}
+
+

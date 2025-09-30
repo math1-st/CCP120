@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=300, initial-scale=1.0">
+    <title>Casinha</title>
+    <style>
+        body {
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #canvas {
+            background-color: #9cfcd4;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <canvas id="canvas" width="300" height="300"></canvas>
+    </div>
+    <script>
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+
+        // chão
+        ctx.beginPath();
+        ctx.lineWidth = 2;
+        ctx.fillStyle = 'gray';
+        ctx.strokeStyle = 'gray';
+        ctx.fillRect(0, 225, 300, 75);
+        ctx.strokeRect(0,0,0,0);
+        ctx.closePath();
+
+        // tronco 1
+        ctx.beginPath();
+        ctx.lineWidth = 2;
+        ctx.fillStyle = '#81491f';
+        ctx.strokeStyle = '#81491f';
+        ctx.fillRect(37.5, 187.5, 18.75, 37.5);
+        ctx.strokeRect(0,0,0,0);
+        ctx.closePath();
+
+        // folha 1
+        ctx.beginPath();
+        ctx.lineWidth = 1;
+        ctx.fillStyle = 'green';
+        ctx.strokeStyle = 'green';
+        ctx.arc(46.875, 178.125, 18.75, 2 * Math.PI, 4 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        // tronco 2
+        ctx.beginPath();
+        ctx.lineWidth = 2;
+        ctx.fillStyle = '#81491f';
+        ctx.strokeStyle = '#81491f';
+        ctx.fillRect(262.5, 225, 18.75, 37.5);
+        ctx.strokeRect(0,0,0,0);
+        ctx.closePath();
+
+        // folha 2
+        ctx.beginPath();
+        ctx.lineWidth = 1;
+        ctx.fillStyle = 'green';
+        ctx.strokeStyle = 'green';
+        ctx.arc(271.875, 215.625, 18.75, 2 * Math.PI, 4 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        // sol
+        ctx.beginPath();
+        ctx.lineWidth = 1;
+        ctx.fillStyle = 'yellow';
+        ctx.strokeStyle = 'yellow';
+        ctx.arc(225, 75, 28.125, 2 * Math.PI, 4 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        // casa
+        ctx.beginPath();
+        ctx.lineWidth = 2;
+        ctx.fillStyle = '#81491f';
+        ctx.strokeStyle = '#81491f';
+        ctx.fillRect(112.5, 150, 75, 75);
+        ctx.strokeRect(0,0,0,0);
+        ctx.closePath();
+
+        // porta
+        ctx.beginPath();
+        ctx.lineWidth = 2;
+        ctx.fillStyle = '#5f4525';
+        ctx.strokeStyle = '#5f4525';
+        ctx.fillRect(142.5, 187.5, 15, 37.5);
+        ctx.strokeRect(0,0,0,0);
+        ctx.closePath();
+
+        // janela esquerda
+        ctx.beginPath();
+        ctx.lineWidth = 2;
+        ctx.fillStyle = '#61bbfb';
+        ctx.strokeStyle = '#61bbfb';
+        ctx.fillRect(118.125, 163.125, 24.375, 24.375);
+        ctx.strokeRect(0,0,0,0);
+        ctx.closePath();
+
+        // janela direita
+        ctx.beginPath();
+        ctx.lineWidth = 2;
+        ctx.fillStyle = '#61bbfb';
+        ctx.strokeStyle = '#61bbfb';
+        ctx.fillRect(157.5, 163.125, 24.375, 24.375);
+        ctx.strokeRect(0,0,0,0);
+        ctx.closePath();
+
+        // telhado
+        ctx.beginPath();
+        ctx.lineWidth = 2;
+        ctx.fillStyle = '#ec6e52';
+        ctx.strokeStyle = '#ec6e52';
+        ctx.moveTo(112.5, 150);
+        ctx.lineTo(150, 112.5);
+        ctx.lineTo(187.5, 150);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        // rio 1
+        ctx.beginPath();
+        ctx.lineWidth = 2;
+        ctx.fillStyle = '#598cfa';
+        ctx.strokeStyle = '#598cfa';
+        ctx.fillRect(0, 225, 37.5, 75);
+        ctx.strokeRect(0,0,0,0);
+        ctx.closePath();
+
+        // rio 2
+        ctx.beginPath();
+        ctx.lineWidth = 1;
+        ctx.fillStyle = '#598cfa';
+        ctx.strokeStyle = '#598cfa';
+        ctx.arc(0, 225, 37.5, 1.5 * Math.PI, 2.5 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        // rio 3
+        ctx.beginPath();
+        ctx.lineWidth = 2;
+        ctx.fillStyle = '#598cfa';
+        ctx.strokeStyle = '#598cfa';
+        ctx.fillRect(0, 262.5, 112.5, 37.5);
+        ctx.strokeRect(0,0,0,0);
+        ctx.closePath();
+
+        // rio 4
+        ctx.beginPath();
+        ctx.lineWidth = 1;
+        ctx.fillStyle = '#598cfa';
+        ctx.strokeStyle = '#598cfa';
+        ctx.arc(112.5, 300, 37.5, 1.5 * Math.PI, 2.5 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+    </script>
+</body>
+</html>
