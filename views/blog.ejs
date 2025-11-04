@@ -1,0 +1,28 @@
+<!-- views/blog.ejs -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog</title>
+  <link rel="stylesheet" href="/css/blog.css">
+</head>
+<body>
+  <h1>Blog</h1>
+
+  <button onclick="window.location.href='/cadastrar_post.html'">Novo Post</button>
+
+  <div class="posts">
+    <% if (posts.length === 0) { %>
+      <p>Nenhum post cadastrado ainda.</p>
+    <% } else { %>
+      <% posts.forEach(post => { %>
+        <div class="post">
+          <h2><%= post.titulo %></h2>
+          <p><strong><%= post.resumo %></strong></p>
+          <p><%= post.conteudo %></p>
+        </div>
+      <% }) %>
+    <% } %>
+  </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!-- public/cadastrar_post.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastrar Post</title>
+  <link rel="stylesheet" href="/css/blog.css">
+  <style>
+
+    body {
+    background-color: #f4f4f4; /* 👈 cor de fundo */
+    text-align: center;       /* 👈 centralização */
+    font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .post {
+      background-color: white;
+      border: 1px solid #ddd;
+      margin: 15px auto;
+      padding: 10px;
+      width: 60%;
+      text-align: left;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    button {
+      padding: 10px 15px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Novo Post</h1>
+  <form action="/cadastrar_post" method="POST">
+    <label>Título:</label><br>
+    <input type="text" name="titulo" required><br><br>
+
+    <label>Resumo:</label><br>
+    <input type="text" name="resumo" required><br><br>
+
+    <label>Conteúdo:</label><br>
+    <textarea name="conteudo" rows="5" cols="40" required></textarea><br><br>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+</body>
+</html>
