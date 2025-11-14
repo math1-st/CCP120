@@ -1,0 +1,41 @@
+body {
+    font-size: 20px;
+    background-color: lightblue;
+}
+
+a:hover {
+    color: red;
+}
+
+header {
+    background-color: #006eab;
+    border-radius: 5px;
+}
+
+#titles {
+    color: white;
+    text-align: center;
+}
+
+.links {
+    font-weight: bold;
+}
+
+.text {
+    color: #006eab;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+table {
+    border-radius: 5px;
+    background-color: lightblue;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 6px;
+}
